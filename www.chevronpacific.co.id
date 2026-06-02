@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PT Chevron Pacific Indonesia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fb;
+color:#222;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.3);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+color:#fff;
+font-size:28px;
+font-weight:800;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ffb400;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=2000&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 8%;
+}
+
+.hero-content{
+max-width:750px;
+color:white;
+}
+
+.hero-content h1{
+font-size:70px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#ffb400;
+color:black;
+text-decoration:none;
+border-radius:50px;
+font-weight:700;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* SECTION */
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:45px;
+color:#003366;
+}
+
+.section-title p{
+margin-top:10px;
+color:#666;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about-text h3{
+font-size:34px;
+margin-bottom:20px;
+color:#003366;
+}
+
+.about-text p{
+line-height:1.9;
+color:#555;
+}
+
+/* STATS */
+
+.stats{
+background:#003366;
+color:white;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+text-align:center;
+}
+
+.stat-box h3{
+font-size:50px;
+margin-bottom:10px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.service-card h3{
+margin-bottom:15px;
+color:#003366;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project{
+position:relative;
+overflow:hidden;
+border-radius:18px;
+}
+
+.project img{
+width:100%;
+height:300px;
+object-fit:cover;
+transition:.5s;
+}
+
+.project:hover img{
+transform:scale(1.1);
+}
+
+.overlay{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+padding:25px;
+background:linear-gradient(transparent,rgba(0,0,0,.85));
+color:white;
+}
+
+/* CONTACT */
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+.contact-info{
+background:#003366;
+color:white;
+padding:40px;
+border-radius:20px;
+}
+
+.contact-info h3{
+margin-bottom:20px;
+font-size:30px;
+}
+
+.contact-form{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.contact-form form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+outline:none;
+}
+
+.contact-form button{
+background:#003366;
+color:white;
+border:none;
+padding:15px;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+}
+
+/* FOOTER */
+
+footer{
+background:#001c38;
+padding:30px;
+text-align:center;
+color:white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero-content h1{
+font-size:45px;
+}
+
+.about,
+.contact{
+grid-template-columns:1fr;
+}
+
+.stats-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+PT Chevron Pacific Indonesia
+</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#services">Layanan</a></li>
+<li><a href="#projects">Proyek</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Mendorong Masa Depan Energi Indonesia
+</h1>
+
+<p>
+PT Chevron Pacific Indonesia berkomitmen menghadirkan
+solusi energi yang aman, efisien, inovatif, dan
+berkelanjutan untuk mendukung pertumbuhan ekonomi nasional.
+</p>
+
+<a href="#about" class="btn">
+Jelajahi Perusahaan
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="section-title">
+<h2>Tentang Kami</h2>
+<p>Perusahaan Energi Berkelas Dunia</p>
+</div>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1400&q=80">
+
+<div class="about-text">
+
+<h3>
+Inovasi Untuk Masa Depan Energi
+</h3>
+
+<p>
+PT Chevron Pacific Indonesia merupakan perusahaan yang bergerak
+di sektor energi dengan fokus pada eksplorasi, produksi,
+pengelolaan sumber daya, dan pengembangan teknologi energi modern.
+</p>
+
+<br>
+
+<p>
+Kami berkomitmen terhadap keselamatan kerja, keberlanjutan
+lingkungan, serta kontribusi nyata terhadap pembangunan Indonesia.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="section-title">
+<h2 style="color:white">
+Pencapaian Kami
+</h2>
+</div>
+
+<div class="stats-grid">
+
+<div class="stat-box">
+<h3>80+</h3>
+<p>Tahun Pengalaman</p>
+</div>
+
+<div class="stat-box">
+<h3>120+</h3>
+<p>Proyek Energi</p>
+</div>
+
+<div class="stat-box">
+<h3>5000+</h3>
+<p>Karyawan Profesional</p>
+</div>
+
+<div class="stat-box">
+<h3>24/7</h3>
+<p>Operasional</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="section-title">
+<h2>Layanan Kami</h2>
+<p>Solusi Energi Terintegrasi</p>
+</div>
+
+<div class="services">
+
+<div class="service-card">
+<h3>Eksplorasi Energi</h3>
+<p>
+Pencarian dan pengembangan sumber daya energi menggunakan teknologi modern.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Produksi Minyak & Gas</h3>
+<p>
+Operasional produksi berstandar internasional dengan tingkat keamanan tinggi.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Teknologi Industri</h3>
+<p>
+Pemanfaatan sistem digital untuk meningkatkan efisiensi operasional.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Keberlanjutan</h3>
+<p>
+Program lingkungan dan sosial yang mendukung masa depan energi hijau.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECT -->
+
+<section id="projects">
+
+<div class="section-title">
+<h2>Proyek Kami</h2>
+<p>Beberapa Area Operasional Energi</p>
+</div>
+
+<div class="projects">
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80">
+<div class="overlay">
+<h3>Offshore Platform</h3>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80">
+<div class="overlay">
+<h3>Renewable Energy</h3>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80">
+<div class="overlay">
+<h3>Oil & Gas Facility</h3>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="section-title">
+<h2>Hubungi Kami</h2>
+<p>Kami Siap Membantu Anda</p>
+</div>
+
+<div class="contact">
+
+<div class="contact-info">
+
+<h3>Informasi Kantor</h3>
+
+<p><b>Alamat :</b> Batam, Indonesia</p>
+
+<br>
+
+<p><b>Email :</b> info@chevronpacific.co.id</p>
+
+<br>
+
+<p><b>Telepon :</b> +62 851 2197 3663</p>
+
+<br>
+
+<p>
+Tim kami siap memberikan informasi mengenai layanan,
+kemitraan bisnis, dan pengembangan proyek energi.
+</p>
+
+</div>
+
+<div class="contact-form">
+
+<form>
+
+<input type="text" placeholder="Nama Lengkap">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Subjek">
+
+<textarea rows="6" placeholder="Tulis pesan Anda"></textarea>
+
+<button>
+Kirim Pesan
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 PT Chevron Pacific Indonesia. All Rights Reserved.
+</footer>
+
+</body>
+</html>
