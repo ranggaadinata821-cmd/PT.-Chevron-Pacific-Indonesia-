@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PT Chevron Pacific Indonesia | Energy & Industrial Solutions</title>
+
+<meta name="title" content="PT Chevron Pacific Indonesia">
+<meta name="description" content="PT Chevron Pacific Indonesia menyediakan solusi energi, minyak, gas, teknologi industri, dan konsultasi energi yang aman, efisien, inovatif, dan berkelanjutan.">
+<meta name="keywords" content="Chevron, Chevron Indonesia, Chevron Pacific Indonesia, Energi, Minyak, Gas, Industri, Teknologi Energi, Batam, Kepulauan Riau, Indonesia">
+<meta name="author" content="PT Chevron Pacific Indonesia">
+<meta name="robots" content="index, follow">
+<meta name="language" content="Indonesian">
+<meta name="theme-color" content="#1e7f4f">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="PT Chevron Pacific Indonesia">
+<meta property="og:description" content="Solusi energi, minyak, gas, dan teknologi industri untuk masa depan Indonesia.">
+<meta property="og:image" content="26339.png">
+<meta property="og:site_name" content="PT Chevron Pacific Indonesia">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PT Chevron Pacific Indonesia">
+<meta name="twitter:description" content="Solusi energi, minyak, gas, dan teknologi industri untuk masa depan Indonesia.">
+<meta name="twitter:image" content="26339.png">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="26339.png">
+<link rel="apple-touch-icon" href="26339.png">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="26339.png" alt="Chevron Logo">
+        <span>PT Chevron Pacific Indonesia</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+  
+         <img src="26339.png" alt="Chevron Logo" class="hero-logo">
+
+        <h1>Membangun Masa Depan Energi Indonesia</h1>
+
+        <p>
+            PT Chevron Pacific Indonesia berkomitmen menghadirkan
+            solusi energi yang aman, efisien, inovatif, dan
+            berkelanjutan untuk mendukung pembangunan nasional.
+        </p>
+
+        <a href="#contact" class="btn">Hubungi Kami</a>
+
+        <a href="https://wa.me/6285121973663" class="btn">
+            WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+<section id="about">
+
+    <div class="section-title">
+        <h2>Tentang Perusahaan</h2>
+    </div>
+
+    <div class="card">
+
+        <p>
+            PT Chevron Pacific Indonesia bergerak di bidang energi,
+            minyak, gas, teknologi industri, dan konsultasi energi
+            dengan mengedepankan inovasi, keselamatan, dan
+            keberlanjutan.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="services">
+
+    <div class="section-title">
+        <h2>Layanan Kami</h2>
+    </div>
+
+    <div class="card">
+
+        <h3>Eksplorasi Energi</h3>
+        <p>Pengembangan sumber daya energi dengan teknologi modern.</p>
+
+        <br>
+
+        <h3>Produksi Minyak & Gas</h3>
+        <p>Operasional berstandar internasional.</p>
+
+        <br>
+
+        <h3>Teknologi Industri</h3>
+        <p>Transformasi digital dan efisiensi industri.</p>
+
+        <br>
+
+        <h3>Konsultasi Energi</h3>
+        <p>Strategi dan solusi pengembangan energi berkelanjutan.</p>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <div class="section-title">
+        <h2>Kontak Kami</h2>
+    </div>
+
+    <div class="card">
+
+        <p><strong>Alamat:</strong></p>
+        <p>Batu Merah, Batam, Kepulauan Riau, Indonesia</p>
+
+        <br>
+
+        <p><strong>Email:</strong></p>
+        <p>chevron.corporation.idn@gmail.com</p>
+
+        <br>
+
+        <p><strong>WhatsApp:</strong></p>
+        <p>+62 851-2197-3663</p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <img src="26339.png" alt="Chevron Logo" height="60">
+
+    <br><br>
+
+    <h3>PT Chevron Pacific Indonesia</h3>
+
+    <br>
+
+    <p>
+        Solusi Energi, Minyak, Gas dan Teknologi Industri Indonesia
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 PT Chevron Pacific Indonesia. All Rights Reserved.
+    </p>
+
+</footer>
+      <img src="26339.png" alt="Chevron Logo" height="60">
+
+<a href="https://wa.me/6285121973663" class="wa-float">
+    💬 WhatsApp
+</a>
+
+</body>
+      
+body{
+    background:#f5f7fa;
+color:#222;
+font-family:'Poppins',sans-serif;
+line-height:1.7;
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 8%;
+
+    background:#1e7f4f;
+    box-shadow:0 4px 15px rgba(0,0,0,.12);
+
+    z-index:1000;
+}
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+}
+
+.logo img{
+    height:65px;
+    width:auto;
+
+    background:#fff;
+    padding:6px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+/* NAVIGATION */
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#d9ffe7;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:100px 8%;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=2000&q=80');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:800px;
+    color:#fff;
+}
+
+.hero-logo{
+    width:180px;
+    margin-bottom:25px;
+
+    background:#fff;
+    padding:10px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.hero h1{
+    font-size:58px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+
+    padding:14px 28px;
+    margin:5px;
+
+    background:#
+
+</style>
