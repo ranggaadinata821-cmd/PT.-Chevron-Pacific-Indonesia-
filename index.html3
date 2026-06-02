@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PT Chevron Pacific Indonesia</title>
+
+<meta name="description" content="PT Chevron Pacific Indonesia - Solusi Energi, Minyak, Gas dan Teknologi Industri di Indonesia">
+<meta name="keywords" content="Chevron Pacific Indonesia, Energi, Minyak, Gas, Batam, Indonesia">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#222;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+font-weight:700;
+font-size:20px;
+}
+
+.logo img{
+height:50px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+nav ul li a:hover{
+color:#ffb400;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=2000&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 8%;
+}
+
+.hero-content{
+max-width:700px;
+color:white;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#ffb400;
+color:black;
+text-decoration:none;
+border-radius:50px;
+font-weight:700;
+margin-right:10px;
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:40px;
+color:#003366;
+}
+
+.about,
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.service{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.service h3{
+color:#003366;
+margin-bottom:10px;
+}
+
+.contact-form form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea{
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+button{
+padding:15px;
+background:#003366;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+footer{
+background:#001c38;
+color:white;
+padding:40px 8%;
+text-align:center;
+}
+
+.wa-float{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+z-index:9999;
+}
+
+iframe{
+border-radius:15px;
+}
+
+@media(max-width:900px){
+
+.hero-content h1{
+font-size:40px;
+}
+
+.about,
+.contact{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png" alt="Logo">
+<span>PT Chevron Pacific Indonesia</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#services">Layanan</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Membangun Masa Depan Energi Indonesia</h1>
+
+<p>
+PT Chevron Pacific Indonesia berkomitmen menghadirkan solusi energi yang aman,
+efisien, inovatif dan berkelanjutan untuk mendukung pembangunan nasional.
+</p>
+
+<a href="#contact" class="btn">Hubungi Kami</a>
+
+<a href="https://wa.me/6285121973663" class="btn">
+WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="section-title">
+<h2>Tentang Perusahaan</h2>
+</div>
+
+<div class="about">
+
+<div class="card">
+
+<h3>Profil Perusahaan</h3>
+
+<br>
+
+<p>
+PT Chevron Pacific Indonesia merupakan perusahaan yang bergerak
+di bidang energi dengan fokus pada pengembangan solusi energi,
+teknologi industri, dan pengelolaan sumber daya secara profesional.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Visi & Misi</h3>
+
+<br>
+
+<p>
+Menjadi perusahaan energi terpercaya dan berkelanjutan di Indonesia.
+</p>
+
+<br>
+
+<p>
+• Menyediakan solusi energi yang aman dan efisien.<br>
+• Mengembangkan teknologi modern.<br>
+• Mendukung pertumbuhan ekonomi nasional.<br>
+• Menjaga kelestarian lingkungan.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="section-title">
+<h2>Layanan Kami</h2>
+</div>
+
+<div class="services">
+
+<div class="service">
+<h3>Eksplorasi Energi</h3>
+<p>Pengembangan sumber daya energi dengan teknologi modern.</p>
+</div>
+
+<div class="service">
+<h3>Produksi Minyak & Gas</h3>
+<p>Operasional berstandar internasional.</p>
+</div>
+
+<div class="service">
+<h3>Teknologi Industri</h3>
+<p>Peningkatan efisiensi melalui transformasi digital.</p>
+</div>
+
+<div class="service">
+<h3>Konsultasi Energi</h3>
+<p>Solusi dan strategi pengembangan energi.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Lokasi Kantor</h2>
+</div>
+
+<iframe
+src="https://maps.google.com/maps?q=Persero%20Batam%20Pt.%20Batu%20Merah%20Batam&t=&z=15&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="400"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<div class="card">
+
+<h3>Informasi Kontak</h3>
+
+<br>
+
+<p><b>Alamat:</b><br>
+Persero Batam Pt., Batu Merah, Kec. Batu Ampar,
+Kota Batam, Kepulauan Riau 29444
+</p>
+
+<br>
+
+<p><b>Email:</b><br>
+chevron.corporation.idn@gmail.com
+</p>
+
+<br>
+
+<p><b>WhatsApp:</b><br>
++62 851-2197-3663
+</p>
+
+</div>
+
+<div class="contact-form card">
+
+<h3>Kirim Pesan</h3>
+
+<br>
+
+<form name="contact" method="POST" data-netlify="true">
+
+<input type="hidden" name="form-name" value="contact">
+
+<input type="text" name="nama" placeholder="Nama Lengkap" required>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<input type="text" name="subjek" placeholder="Subjek">
+
+<textarea name="pesan" rows="6" placeholder="Tulis pesan Anda"></textarea>
+
+<button type="submit">
+Kirim Pesan
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<img src="logo.png" height="60">
+
+<br><br>
+
+<h3>PT Chevron Pacific Indonesia</h3>
+
+<br>
+
+<p>
+Persero Batam Pt., Batu Merah, Kec. Batu Ampar,
+Kota Batam, Kepulauan Riau 29444
+</p>
+
+<br>
+
+<p>
+Email: chevron.corporation.idn@gmail.com
+</p>
+
+<p>
+WhatsApp: +62 851-2197-3663
+</p>
+
+<br>
+
+<p>
+© 2026 PT Chevron Pacific Indonesia. All Rights Reserved.
+</p>
+
+</footer>
+
+<a href="https://wa.me/6285121973663" class="wa-float">
+💬 WhatsApp
+</a>
+
+</body>
+      </html>
