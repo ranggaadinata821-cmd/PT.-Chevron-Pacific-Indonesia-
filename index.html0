@@ -1,0 +1,518 @@
+1	<!DOCTYPE html>
+2	<html lang="id">
+3	<head>
+4	<meta charset="UTF-8">
+5	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+6	
+7	<title>PT Chevron Pacific Indonesia</title>
+8	
+9	<meta name="description" content="PT Chevron Pacific Indonesia - Solusi Energi, Minyak, Gas dan Teknologi Industri di Indonesia.">
+10	<meta name="keywords" content="Chevron, Chevron Indonesia, Minyak, Gas, Energi, Industri, Engineering">
+11	<meta name="author" content="PT Chevron Pacific Indonesia">
+12	
+13	<link rel="preconnect" href="https://fonts.googleapis.com">
+14	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+15	
+16	<style>
+17	
+18	*{
+19	    margin:0;
+20	    padding:0;
+21	    box-sizing:border-box;
+22	    font-family:'Poppins',sans-serif;
+23	}
+24	
+25	body{
+26	    background:#f8f9fa;
+27	    color:#222;
+28	    line-height:1.6;
+29	}
+30	
+31	/* HEADER */
+32	
+33	header{
+34	    position:fixed;
+35	    width:100%;
+36	    top:0;
+37	    left:0;
+38	    z-index:1000;
+39	    background:#ffffff;
+40	    box-shadow:0 2px 15px rgba(0,0,0,.08);
+41	}
+42	
+43	.container{
+44	    width:90%;
+45	    max-width:1200px;
+46	    margin:auto;
+47	}
+48	
+49	.navbar{
+50	    display:flex;
+51	    justify-content:space-between;
+52	    align-items:center;
+53	    padding:18px 0;
+54	}
+55	
+56	.logo{
+57	    display:flex;
+58	    align-items:center;
+59	    gap:10px;
+60	    font-size:22px;
+61	    font-weight:700;
+62	    color:#0057B8;
+63	}
+64	
+65	.logo img{
+66	    width:45px;
+67	    height:auto;
+68	    display:block;
+69	}
+70	
+71	.logo span{
+72	    color:#0057B8;
+73	}
+74	
+75	nav ul{
+76	    list-style:none;
+77	    display:flex;
+78	    gap:25px;
+79	}
+80	
+81	nav ul li a{
+82	    text-decoration:none;
+83	    color:#333;
+84	    font-weight:500;
+85	    transition:.3s;
+86	}
+87	
+88	nav ul li a:hover{
+89	    color:#0057B8;
+90	}
+91	
+92	/* HERO */
+93	
+94	.hero{
+95	    height:100vh;
+96	    background:
+97	    linear-gradient(rgba(0,0,0,.55),
+98	    rgba(0,0,0,.55)),
+99	    url('https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1920');
+100	    background-size:cover;
+101	    background-position:center;
+102	    display:flex;
+103	    align-items:center;
+104	    color:white;
+105	}
+106	
+107	.hero-content{
+108	    max-width:700px;
+109	}
+110	
+111	.hero h1{
+112	    font-size:58px;
+113	    margin-bottom:15px;
+114	}
+115	
+116	.hero p{
+117	    font-size:18px;
+118	    margin-bottom:25px;
+119	}
+120	
+121	.btn{
+122	    display:inline-block;
+123	    padding:14px 30px;
+124	    background:#E31E24;
+125	    color:white;
+126	    text-decoration:none;
+127	    border-radius:5px;
+128	    transition:.3s;
+129	}
+130	
+131	.btn:hover{
+132	    background:#c3171d;
+133	}
+134	
+135	/* SECTION */
+136	
+137	section{
+138	    padding:90px 0;
+139	}
+140	
+141	.section-title{
+142	    text-align:center;
+143	    margin-bottom:50px;
+144	}
+145	
+146	.section-title h2{
+147	    color:#0057B8;
+148	    font-size:38px;
+149	}
+150	
+151	.about-grid{
+152	    display:grid;
+153	    grid-template-columns:1fr 1fr;
+154	    gap:40px;
+155	    align-items:center;
+156	}
+157	
+158	.about img{
+159	    width:100%;
+160	    border-radius:10px;
+161	}
+162	
+163	.services-grid{
+164	    display:grid;
+165	    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+166	    gap:25px;
+167	}
+168	
+169	.service{
+170	    background:white;
+171	    padding:30px;
+172	    border-radius:10px;
+173	    box-shadow:0 5px 15px rgba(0,0,0,.08);
+174	    transition:.3s;
+175	}
+176	
+177	.service:hover{
+178	    transform:translateY(-8px);
+179	}
+180	
+181	.service h3{
+182	    color:#0057B8;
+183	    margin-bottom:10px;
+184	}
+185	
+186	/* STATS */
+187	
+188	.stats{
+189	    background:#0057B8;
+190	    color:white;
+191	}
+192	
+193	.stats-grid{
+194	    display:grid;
+195	    grid-template-columns:repeat(4,1fr);
+196	    text-align:center;
+197	    gap:20px;
+198	}
+199	
+200	.stats h3{
+201	    font-size:42px;
+202	}
+203	
+204	/* CONTACT */
+205	
+206	.contact{
+207	    background:#fff;
+208	}
+209	
+210	.contact-form{
+211	    max-width:700px;
+212	    margin:auto;
+213	}
+214	
+215	.contact-form input,
+216	.contact-form textarea{
+217	    width:100%;
+218	    padding:15px;
+219	    margin-bottom:15px;
+220	    border:1px solid #ddd;
+221	    border-radius:5px;
+222	}
+223	
+224	.contact-form button{
+225	    border:none;
+226	    cursor:pointer;
+227	}
+228	
+229	/* FOOTER */
+230	
+231	footer{
+232	    background:#111;
+233	    color:#ccc;
+234	    text-align:center;
+235	    padding:25px;
+236	}
+237	
+238	@media(max-width:768px){
+239	
+240	.hero h1{
+241	    font-size:40px;
+242	}
+243	
+244	.about-grid{
+245	    grid-template-columns:1fr;
+246	}
+247	
+248	.stats-grid{
+249	    grid-template-columns:repeat(2,1fr);
+250	}
+251	
+252	nav{
+253	    display:none;
+254	}
+255	
+256	}
+257	</style>
+258	</head>
+259	
+260	<body>
+261	
+262	<footer>
+263	
+264	<div class="container">
+265	
+266	<h3 style="color:white;margin-bottom:15px;">
+267	PT Chevron Pacific Indonesia
+268	</h3>
+269	
+270	<p>
+271	📍 Persero Batam Pt., Batu Merah,
+272	    Kec. Batu Ampar,Kota Batam, 
+273	    Kepulauan Riau 29444
+274	</p>
+275	
+276	<p>
+277	📧 info@chevronpacific.co.id
+278	</p>
+279	
+280	<p>
+281	📱 WhatsApp:
+282	<a href="https://wa.me/6285121973663" style="color:#fff;">
+283	+62 851-2197-3663
+284	</a>
+285	</p>
+286	
+287	<br>
+288	
+289	<p>
+290	© 2026 PT Chevron Pacific Indonesia.
+291	All Rights Reserved.
+292	</p>
+293	
+294	</div>
+295	
+296	</footer>
+297	 
+298	<div class="logo">
+299	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Chevron_Logo.svg/512px-Chevron_Logo.svg.png" alt="Chevron">
+300	<div>
+301	<h3>PT Chevron Pacific Indonesia</h3>
+302	<small>Energy & Industrial Solutions</small>
+303	</div>
+304	</div>
+305	
+306	<nav>
+307	<ul>
+308	<li><a href="#home">Home</a></li>
+309	<li><a href="#about">Tentang</a></li>
+310	<li><a href="#services">Layanan</a></li>
+311	<li><a href="#contact">Kontak</a></li>
+312	</ul>
+313	</nav>
+314	
+315	</div>
+316	</header>
+317	
+318	<section class="hero" id="home">
+319	<div class="container">
+320	
+321	<div class="hero-content">
+322	<h1>Energi Untuk Masa Depan Indonesia</h1>
+323	
+324	<p>
+325	Menyediakan solusi energi, minyak, gas,
+326	engineering dan teknologi industri dengan
+327	standar keselamatan serta kualitas terbaik.
+328	</p>
+329	
+330	<a href="#about" class="btn">
+331	Pelajari Lebih Lanjut
+332	</a>
+333	</div>
+334	
+335	</div>
+336	</section>
+337	
+338	<section class="about" id="about">
+339	<div class="container">
+340	
+341	<div class="section-title">
+342	<h2>Tentang Kami</h2>
+343	</div>
+344	
+345	<div class="about-grid">
+346	
+347	<img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200">
+348	
+349	<div>
+350	<h3>PT Chevron Pacific Indonesia</h3>
+351	
+352	<p>
+353	Perusahaan yang bergerak di sektor energi,
+354	minyak dan gas dengan fokus pada inovasi,
+355	keselamatan kerja serta keberlanjutan
+356	operasional industri.
+357	</p>
+358	
+359	<br>
+360	
+361	<p>
+362	Kami berkomitmen mendukung kebutuhan energi
+363	Indonesia melalui teknologi modern dan
+364	pengembangan sumber daya manusia yang unggul.
+365	</p>
+366	
+367	</div>
+368	
+369	</div>
+370	</div>
+371	</section>
+372	
+373	<section id="services">
+374	<div class="container">
+375	
+376	<div class="section-title">
+377	<h2>Layanan Kami</h2>
+378	</div>
+379	
+380	<div class="services-grid">
+381	
+382	<div class="service">
+383	<h3>Oil & Gas</h3>
+384	<p>
+385	Eksplorasi, produksi dan pengelolaan energi migas.
+386	</p>
+387	</div>
+388	
+389	<div class="service">
+390	<h3>Engineering</h3>
+391	<p>
+392	Solusi teknik dan desain industri berstandar internasional.
+393	</p>
+394	</div>
+395	
+396	<div class="service">
+397	<h3>Industrial Technology</h3>
+398	<p>
+399	Implementasi teknologi untuk meningkatkan efisiensi operasional.
+400	</p>
+401	</div>
+402	
+403	<div class="service">
+404	<h3>Energy Solutions</h3>
+405	<p>
+406	Pengembangan solusi energi berkelanjutan.
+407	</p>
+408	</div>
+409	
+410	</div>
+411	
+412	</div>
+413	</section>
+414	
+415	<section class="stats">
+416	
+417	<div class="container">
+418	
+419	<div class="stats-grid">
+420	
+421	<div>
+422	<h3>60+</h3>
+423	<p>Tahun Pengalaman</p>
+424	</div>
+425	
+426	<div>
+427	<h3>500+</h3>
+428	<p>Profesional</p>
+429	</div>
+430	
+431	<div>
+432	<h3>100+</h3>
+433	<p>Proyek Industri</p>
+434	</div>
+435	
+436	<div>
+437	<h3>24/7</h3>
+438	<p>Support</p>
+439	</div>
+440	
+441	</div>
+442	
+443	</div>
+444	
+445	</section>
+446	
+447	<section class="contact" id="contact">
+448	
+449	<div class="container">
+450	
+451	<div class="section-title">
+452	<h2>Hubungi Kami</h2>
+453	</div>
+454	
+455	<div style="text-align:center;margin-bottom:30px;">
+456	    <p><strong>WhatsApp:</strong></p>
+457	    <p>
+458	        <a href="https://wa.me/6285121973663" target="_blank">
+459	            +62 851-2197-3663
+460	        </a>
+461	    </p>
+462	
+463	    <br>
+464	
+465	    <p><strong>Email:</strong></p>
+466	    <p>
+467	        <a href="mailto:info@chevronpacific.co.id">
+468	            info@chevronpacific.co.id
+469	        </a>
+470	    </p>
+471	
+472	    <br>
+473	
+474	    <p>
+475	<strong>Alamat Kantor:</strong><br>
+476	Persero Batam Pt.<br>
+477	Batu Merah, Kec. Batu Ampar<br>
+478	Kota Batam, Kepulauan Riau 29444<br>
+479	Indonesia
+480	    </p>
+481	
+482	    <br>
+483	
+484	    <a href="https://www.google.com/maps/search/?api=1&query=Persero+Batam+Pt,+Batu+Merah,+Batu+Ampar,+Batam"
+485	   target="_blank"
+486	   class="btn">
+487	   📍 Buka di Google Maps
+488	    </a>
+489	</div>
+490	
+491	<form class="contact-form">
+492	
+493	<input type="text" placeholder="Nama Lengkap">
+494	
+495	<input type="email" placeholder="Email">
+496	
+497	<input type="text" placeholder="Subjek">
+498	
+499	<textarea rows="6" placeholder="Pesan"></textarea>
+500	
+501	<button class="btn">
+502	Kirim Pesan
+503	</button>
+504	
+505	</form>
+506	
+507	</div>
+508	
+509	</section>
+510	
+511	<footer>
+512	© 2026 PT Chevron Pacific Indonesia.
+513	All Rights Reserved.
+514	</footer>
+515	
+516	</body>
+517	  </html>
+518
